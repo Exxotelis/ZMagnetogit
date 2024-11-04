@@ -1,0 +1,63 @@
+{% extends 'ZApp/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="section-title text-center">ZMagneto Community</h2>
+    <p class="text-center">Welcome to the <strong>ZMagneto Community</strong>!</p>
+    <p class="text-center">Here, we share ideas, showcase our favorite designs, and celebrate creativity.</p>
+    <p class="text-center">Join us in connecting with other like-minded individuals who share a passion for design and expression.</p>
+    <p class="text-center">Stay tuned for updates, events, and ways to engage with the community. We value your feedback and look forward to growing together!</p>
+
+    <div class="row mt-5">
+        <div class="col-md-4 text-center">
+            <img src="{% static 'img/community_events.jpg' %}" alt="Community Events" class="img-fluid mb-3">
+            <h4 class="item-title">Community Events</h4>
+            <p class="item-description">Participate in our exciting events to connect with fellow designers and showcase your work.</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="{% static 'img/community_feedback.jpg' %}" alt="Feedback" class="img-fluid mb-3">
+            <h4 class="item-title">Share Your Feedback</h4>
+            <p class="item-description">Your thoughts matter! Share your feedback to help us improve our community.</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="{% static 'img/community_support.jpg' %}" alt="Support" class="img-fluid mb-3">
+            <h4 class="item-title">Community Support</h4>
+            <p class="item-description">We're here for you. Reach out for support and connect with other members.</p>
+        </div>
+    </div>
+
+    <div class="text-center mt-5">
+        <a href="{% url 'contact' %}" class="btn btn-primary btn-lg">Join the Discussion</a>
+    </div>
+    <br>
+</div>
+
+<style>
+    .section-title {
+        font-size: 2.2em;
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-bottom: 2px solid #032963;
+        display: inline-block;
+        padding-bottom: 10px;
+    }
+
+    .item-title {
+        font-size: 1.5em;
+        color: #032963;
+        margin-top: 15px;
+    }
+
+    .item-description {
+        font-size: 0.9em;
+        color: #555;
+    }
+
+    .text-center p {
+        font-size: 1.1em;
+        color: #333;
+    }
+</style>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends 'ZApp/base.html' %}
+    
+{% load static %}
+
+{% block content %}
+<div class="container how-it-works">
+    <h1>How It Works</h1>
+    <p>Welcome to Sticker Magnet! Follow these simple steps to get your custom stickers and designs up and running.</p>
+    
+    <div class="step">
+        <h2>Step 1: Choose Your Design</h2>
+        <p>Start by selecting the design you want to upload. You can either create a new design or choose an existing one to upload as a sticker. Make sure your image meets our format requirements (JPG, PNG, 300dpi).</p>
+    </div>
+
+    <div class="step">
+        <h2>Step 2: Upload Your Design</h2>
+        <p>Head to the <a href="{% url 'upload_design' %}">Upload Design</a> page and follow the instructions to upload your design. You can also upload an image directly on our <a href="{% url 'upload_image' %}">Upload Image</a> page if you’re working with photos.</p>
+    </div>
+
+    <div class="step">
+        <h2>Step 3: View and Manage Designs</h2>
+        <p>Once uploaded, you can view all your designs on the <a href="{% url 'view_designs' %}">View Designs</a> page. Here, you can edit, manage, or delete designs as needed.</p>
+    </div>
+
+    <div class="step">
+        <h2>Step 4: Place Your Order</h2>
+        <p>After you’re happy with your designs, place your order. We’ll take care of the printing and shipping to get your stickers delivered to you as soon as possible!</p>
+    </div>
+
+    <div class="step">
+        <h2>Step 5: Receive and Enjoy!</h2>
+        <p>Once your order arrives, you’ll have your custom stickers ready to go. Stick them, share them, or give them as gifts—the possibilities are endless!</p>
+    </div>
+
+    <div class="help-section">
+        <h3>Need Help?</h3>
+        <p>If you need assistance at any step, don’t hesitate to reach out on our <a href="{% url 'contact' %}">Contact Us</a> page. We’re here to help!</p>
+    </div>
+</div>
+{% endblock %}

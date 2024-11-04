@@ -1,0 +1,16 @@
+<!-- ZApp/templates/ZApp/subscribe.html -->
+{% extends 'ZApp/base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2>Subscribe to Our Newsletter</h2>
+    <form action="{% url 'subscribe' %}" method="post" class="mt-3">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="email">Email address:</label>
+            <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+    </form>
+</div>
+{% endblock %}

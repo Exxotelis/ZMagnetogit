@@ -1,0 +1,23 @@
+{% extends 'ZApp/base.html' %}
+
+{% block title %}Upload Your Magnet Sticker Design{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center">Upload Your Magnet Sticker Design</h1>
+    <p class="text-center mb-4">Share your creativity with us! Use the form below to upload your custom sticker designs that will bring fun and inspiration to our collection.  
+        Ensure your design meets the required specifications for the best results.</p>
+    <div class="d-flex justify-content-center">
+        <form method="post" enctype="multipart/form-data" class="w-50">
+            {% csrf_token %}
+            {{ form.as_p }}  <!-- Render the form fields -->
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Upload Design</button>
+            </div>
+        </form>
+    </div>
+    <div class="text-center mt-3">
+        <p><a href="{% url 'home' %}">Back to Home</a></p>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends 'ZApp/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="section-title">Privacy Policy<span>.</span></h2>
+    <p>At ZMagneto, we are committed to protecting your privacy. This policy explains how we handle your data.</p>
+    
+    <h4>Information Collection</h4>
+    <p>We collect various types of information in order to provide our services effectively.</p>
+    
+    <h4>How We Use Your Information</h4>
+    <p>Your information helps us to enhance your experience with our products and services.</p>
+
+    <h4>Data Security</h4>
+    <p>We take the security of your data seriously and implement measures to protect it.</p>
+
+    <h4>Your Rights</h4>
+    <p>You have rights regarding your personal information, including access and correction.</p>
+
+    <h4>Changes to This Policy</h4>
+    <p>We may update our Privacy Policy from time to time. Any changes will be posted on this page.</p>
+</div>
+
+<!-- Adding extra space at the bottom -->
+<div style="margin-bottom: 100px;"></div>
+
+<style>
+    .section-title {
+        font-size: 2.2em;
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-bottom: 2px solid #032963;
+        display: inline-block;
+        padding-bottom: 10px;
+    }
+
+    h4 {
+        margin-top: 20px;
+        font-weight: bold;
+        color: #032963;
+    }
+
+    p {
+        line-height: 1.6;
+    }
+</style>
+{% endblock %}

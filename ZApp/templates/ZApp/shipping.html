@@ -1,0 +1,41 @@
+{% extends 'ZApp/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="section-title text-center">Shipping Information</h2>
+    <p class="text-center">We offer fast, reliable shipping to your location. Learn more about our shipping policies and options.</p>
+    
+    <div class="text-center">
+        <ul class="list-unstyled mt-4">
+            <li><strong>Domestic Shipping:</strong> 3-5 business days</li>
+            <li><strong>International Shipping:</strong> 7-14 business days</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Adding extra space at the bottom -->
+<div style="margin-bottom: 100px;"></div>
+
+<style>
+    .section-title {
+        font-size: 2.2em;
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-bottom: 2px solid #032963;
+        display: inline-block;
+        padding-bottom: 10px;
+    }
+
+    .text-center p {
+        font-size: 1.1em;
+        color: #333;
+    }
+
+    .text-center ul {
+        font-size: 1em;
+        color: #555;
+    }
+</style>
+{% endblock %}

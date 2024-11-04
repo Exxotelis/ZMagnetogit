@@ -1,0 +1,65 @@
+{% extends 'ZApp/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="section-title text-center">About ZMagneto</h2>
+    <p class="text-center">Welcome to <strong>ZMagneto</strong>! We specialize in creating and showcasing custom, high-quality stickers that bring your unique ideas to life.</p>
+    <p class="text-center">Our mission is to provide a platform where creativity thrives, allowing users to design, sell, and showcase their stickers.</p>
+    <p class="text-center">At ZMagneto, we value quality, creativity, and community engagement, ensuring that every design reflects our customers' visions.</p>
+    <p class="text-center">Thank you for being part of our journey and supporting a vibrant community of sticker enthusiasts!</p>
+
+    <div class="row mt-5">
+        <div class="col-md-4 text-center">
+            <img src="{% static 'img/about_us_1.jpg' %}" alt="Quality Stickers" class="img-fluid mb-3">
+            <h4 class="item-title">Quality Stickers</h4>
+            <p class="item-description">We ensure every sticker meets our high-quality standards for durability and print clarity.</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="{% static 'img/about_us_2.jpg' %}" alt="Creative Designs" class="img-fluid mb-3">
+            <h4 class="item-title">Creative Designs</h4>
+            <p class="item-description">Our designs are crafted to inspire and express individuality.</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="{% static 'img/about_us_3.jpg' %}" alt="Customer Satisfaction" class="img-fluid mb-3">
+            <h4 class="item-title">Customer Satisfaction</h4>
+            <p class="item-description">Your satisfaction is our priority. We're here to assist you every step of the way.</p>
+        </div>
+    </div>
+
+    <div class="text-center mt-5">
+        <a href="{% url 'contact' %}" class="btn btn-primary btn-lg">Contact Us</a>
+    </div>
+    <br>
+</div>
+
+<style>
+    .section-title {
+        font-size: 2.2em;
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-bottom: 2px solid #032963;
+        display: inline-block;
+        padding-bottom: 10px;
+    }
+
+    .item-title {
+        font-size: 1.5em;
+        color: #032963;
+        margin-top: 15px;
+    }
+
+    .item-description {
+        font-size: 0.9em;
+        color: #555;
+    }
+
+    .text-center p {
+        font-size: 1.1em;
+        color: #333;
+    }
+</style>
+{% endblock %}
+

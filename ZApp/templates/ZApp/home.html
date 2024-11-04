@@ -1,0 +1,255 @@
+{% extends 'ZApp/base.html' %}
+{% load static %} 
+
+{% block title %}ZMagneto{% endblock %}
+
+
+{% block content %}
+
+
+
+
+<!-- Hero Slider Begin -->
+<section class="centered-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Bring Your Designs to Life with Sticker Magnet!</h1>
+                <br>
+                <div class="button-group">
+                    <a href="{% url 'upload_image' %}" class="btn">Upload an Image</a>
+                    <a href="{% url 'upload_design' %}" class="btn">Upload a Design</a>
+                    <a href="{% url 'view_designs' %}" class="btn">View Designs</a>
+                </div>
+        </div>
+    </div>
+</section>
+
+<!-- Hero Slider End -->
+
+<!-- Features Section Begin -->
+<section class="features-section spad">
+    <div class="features-ads">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="single-features-ads first">
+                        <img src="{% static 'img/icons/f-delivery.png' %}" alt="Free Shipping Icon">
+                        <h4>Free Shipping on All Orders</h4>
+                        <p>Enjoy complimentary shipping on every order. No minimum purchase required. Experience the convenience of having your favorite designs delivered straight to your door, hassle-free.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-features-ads second">
+                        <img src="{% static 'img/icons/coin.png' %}" alt="Money Back Guarantee Icon">
+                        <h4>100% Money Back Guarantee</h4>
+                        <p>Your satisfaction is our priority. If you’re not completely happy with your purchase, we offer a hassle-free money-back guarantee to ensure your peace of mind.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-features-ads">
+                        <img src="{% static 'img/icons/chat.png' %}" alt="24/7 Support Icon">
+                        <h4>24/7 Online Support</h4>
+                        <p>We're here for you anytime, day or night! Our dedicated support team is ready to assist you with any questions or concerns you may have, ensuring you have a seamless shopping experience.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+<!-- Features Box -->
+<div class="container mt-5">
+    <div class="row mt-5">
+        <div class="col-md-4 text-center">
+            <img src="{% static 'img/monkey.jpg' %}" alt="Inspirational Magnet Stickers" class="img-fluid mb-3">
+            <span class="trend-year">2024 Highlight</span>
+            <h2>Humorous Magnets</h2>
+            <span class="trend-alert">Fun & Quirky</span>
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="{% static 'img/magnet-feature-3.jpg' %}" alt="Magnet Sticker Collection" class="img-fluid mb-3">
+            <span class="trend-year">2024 Trend</span>
+                        <h2>Inspirational Magnets</h2>
+                        <span class="trend-alert">Stay Motivated</span>
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="{% static 'img/magnet-fcomm-1.jpg' %}" alt="Inspirational Magnet Stickers" class="img-fluid mb-3">
+            <span class="trend-year">2024 Showcase</span>
+                        <h2>Magnet Sticker Collection</h2>
+                        <span class="trend-alert">Latest Arrivals</span>
+        </div>
+    </div>
+</div>
+<!-- Features Section End -->
+
+<!-- Latest Sticker Designs Begin -->
+<section class="latest-products spad">
+    <div class="container">
+        <div class="product-filter">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-title">
+                        <h2>Latest Sticker Designs</h2>
+                    </div>
+                    <ul class="product-controls">
+                        <li data-filter="*">All</li>
+                        <li data-filter=".funny">Funny</li>
+                        <li data-filter=".cute">Cute</li>
+                        <li data-filter=".inspirational">Inspirational</li>
+                        <li data-filter=".custom">Custom Designs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="product-list">
+            <div class="col-lg-3 col-sm-6 mix all funny cute">
+                <div class="single-product-item">
+                    <figure>
+                        <a href="#"><img src="{% static 'img/stickers/sticker-1.jpg' %}" alt="Funny Sticker 1"></a>
+                        <div class="p-status">new</div>
+                    </figure>
+                    <div class="product-text">
+                        <h6>Funny Cat Magnet</h6>
+                        <p>$5.90</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mix all cute">
+                <div class="single-product-item">
+                    <figure>
+                        <a href="#"><img src="{% static 'img/stickers/sticker-2.jpg' %}" alt="Cute Sticker 1"></a>
+                        <div class="p-status sale">sale</div>
+                    </figure>
+                    <div class="product-text">
+                        <h6>Cute Puppy Magnet</h6>
+                        <p>$4.90</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mix all inspirational">
+                <div class="single-product-item">
+                    <figure>
+                        <a href="#"><img src="{% static 'img/stickers/sticker-3.jpg' %}" alt="Inspirational Sticker 1"></a>
+                        <div class="p-status">new</div>
+                    </figure>
+                    <div class="product-text">
+                        <h6>Inspirational Quote Magnet</h6>
+                        <p>$6.50</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mix all custom cute">
+                <div class="single-product-item">
+                    <figure>
+                        <a href="#"><img src="{% static 'img/stickers/sticker-4.jpg' %}" alt="Custom Sticker 1"></a>
+                        <div class="p-status popular">popular</div>
+                    </figure>
+                    <div class="product-text">
+                        <h6>Custom Name Magnet</h6>
+                        <p>$8.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mix all funny">
+                <div class="single-product-item">
+                    <figure>
+                        <a href="#"><img src="{% static 'img/stickers/sticker-5.jpg' %}" alt="Funny Sticker 2"></a>
+                        <div class="p-status">new</div>
+                    </figure>
+                    <div class="product-text">
+                        <h6>Funny Taco Magnet</h6>
+                        <p>$5.90</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mix all sale">
+                <div class="single-product-item">
+                    <figure>
+                        <a href="#"><img src="{% static 'img/stickers/sticker-6.jpg' %}" alt="Sale Sticker 1"></a>
+                        <div class="p-status sale">sale</div>
+                    </figure>
+                    <div class="product-text">
+                        <h6>Funny Avocado Magnet</h6>
+                        <p>$4.50</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mix all cute">
+                <div class="single-product-item">
+                    <figure>
+                        <a href="#"><img src="{% static 'img/stickers/sticker-7.jpg' %}" alt="Cute Sticker 2"></a>
+                    </figure>
+                    <div class="product-text">
+                        <h6>Cute Unicorn Magnet</h6>
+                        <p>$7.50</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mix all inspirational">
+                <div class="single-product-item">
+                    <figure>
+                        <a href="#"><img src="{% static 'img/stickers/sticker-8.jpg' %}" alt="Inspirational Sticker 2"></a>
+                        <div class="p-status popular">popular</div>
+                    </figure>
+                    <div class="product-text">
+                        <h6>Believe in Yourself Magnet</h6>
+                        <p>$6.50</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Latest Sticker Designs End -->
+
+
+<!-- Magnet Sticker Showcase Section Begin -->
+<section class="lookbok-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 offset-lg-1">
+                <div class="lookbok-left">
+                    <div class="section-title">
+                        <h2>2024 <br />#MagnetMagic</h2>
+                    </div>
+                    <p>Explore our vibrant collection of magnet stickers that add personality to any space. Our 2024 selection features unique designs that capture humor, inspiration, and creativity. Each sticker is crafted with care, perfect for decorating your fridge, workspace, or gift-giving. Discover the fun and versatility of our magnet stickers and express your individuality in a colorful way.</p>
+                    <a href="#" class="primary-btn look-btn">Explore Collection</a>
+                </div>
+            </div>
+            <div class="col-lg-5 offset-lg-1">
+                <div class="lookbok-pic">
+                    <img src="{% static 'img/magnet-stickers.jpg' %}" alt="Magnet Stickers Showcase">
+                    <div class="pic-text"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Magnet Sticker Showcase Section End -->
+
+
+
+<!-- Logo Section Begin -->
+<div class="logo-section spad">
+    <div class="logo-items owl-carousel">
+        <div class="logo-item">
+            <img src="{% static 'img/logos/logo-1.png' %}" alt="">
+        </div>
+        <div class="logo-item">
+            <img src="{% static 'img/logos/logo-2.png' %}" alt="">
+        </div>
+        <div class="logo-item">
+            <img src="{% static 'img/logos/logo-3.png' %}" alt="">
+        </div>
+        <div class="logo-item">
+            <img src="{% static 'img/logos/logo-4.png' %}" alt="">
+        </div>
+        <div class="logo-item">
+            <img src="{% static 'img/logos/logo-5.png' %}" alt="">
+        </div>
+    </div>
+</div>
+
+<!-- Logo Section End -->
+{% endblock %}

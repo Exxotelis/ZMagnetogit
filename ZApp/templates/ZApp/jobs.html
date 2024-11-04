@@ -1,0 +1,61 @@
+{% extends 'ZApp/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="section-title text-center">Careers at ZMagneto</h2>
+    <p class="text-center">Join our team! We are looking for talented and passionate individuals to work with us at <strong>ZMagneto</strong>.</p>
+    <p class="text-center">Check back for job openings or reach out to us at <a href="mailto:careers@zmagneto.com">careers@zmagneto.com</a>.</p>
+
+    <div class="row mt-5">
+        <div class="col-md-4 text-center">
+            <img src="{% static 'img/career_opportunity.jpg' %}" alt="Career Opportunity" class="img-fluid mb-3">
+            <h4 class="item-title">Open Positions</h4>
+            <p class="item-description">Explore exciting career opportunities at ZMagneto.</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="{% static 'img/team_culture.jpg' %}" alt="Team Culture" class="img-fluid mb-3">
+            <h4 class="item-title">Our Culture</h4>
+            <p class="item-description">Learn about our inclusive and creative work environment.</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="{% static 'img/benefits.jpg' %}" alt="Employee Benefits" class="img-fluid mb-3">
+            <h4 class="item-title">Employee Benefits</h4>
+            <p class="item-description">Discover the benefits of being part of the ZMagneto team.</p>
+        </div>
+    </div>
+
+    <div class="text-center mt-5">
+        <a href="{% url 'contact' %}" class="btn btn-primary btn-lg">Contact Us</a>
+    </div>
+    <br>
+</div>
+
+<style>
+    .section-title {
+        font-size: 2.2em;
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-bottom: 2px solid #032963;
+        display: inline-block;
+        padding-bottom: 10px;
+    }
+
+    .item-title {
+        font-size: 1.5em;
+        color: #032963;
+        margin-top: 15px;
+    }
+
+    .item-description {
+        font-size: 0.9em;
+        color: #555;
+    }
+
+    .text-center p {
+        font-size: 1.1em;
+        color: #333;
+    }
+</style>
+{% endblock %}

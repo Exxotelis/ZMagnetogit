@@ -1,0 +1,48 @@
+{% extends 'ZApp/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="section-title">Search<span>.</span></h2>
+    <p>Use the search bar below to find specific products or information on our site.</p>
+    <form action="{% url 'search' %}" method="get">
+        <input type="text" class="form-control mb-3" name="query" placeholder="Search..." required>
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+</div>
+
+<!-- Adding extra space at the bottom -->
+<div style="margin-bottom: 100px;"></div>
+
+<style>
+    .section-title {
+        font-size: 2.2em;
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-bottom: 2px solid #032963;
+        display: inline-block;
+        padding-bottom: 10px;
+    }
+
+    .form-control {
+        border: 1px solid #ad8e6e;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .btn-primary {
+        background-color: #032963;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .btn-primary:hover {
+        background-color: #ad8e6e;
+    }
+</style>
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends 'ZApp/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="section-title">Shipping & Delivery<span>.</span></h2>
+    <p>At ZMagneto, we strive to offer fast and reliable shipping. Here is information on our shipping and delivery policies:</p>
+    
+    <h4>Domestic Shipping</h4>
+    <p>We offer domestic shipping with an estimated delivery time of 3-5 business days. All orders are processed within 1-2 business days.</p>
+    
+    <h4>International Shipping</h4>
+    <p>International orders typically take 7-14 business days for delivery. Please note that customs fees may apply.</p>
+    
+    <h4>Order Tracking</h4>
+    <p>Once your order has been shipped, you will receive a confirmation email with a tracking number to monitor your delivery.</p>
+    
+    <h4>Delivery Issues</h4>
+    <p>If you encounter any issues with your delivery, please contact our support team, and we will assist you promptly.</p>
+</div>
+
+<!-- Adding extra space at the bottom -->
+<div style="margin-bottom: 100px;"></div>
+
+<style>
+    .section-title {
+        font-size: 2.2em;
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-bottom: 2px solid #032963;
+        display: inline-block;
+        padding-bottom: 10px;
+    }
+
+    h4 {
+        margin-top: 20px;
+        font-weight: bold;
+        color: #032963;
+    }
+
+    p {
+        line-height: 1.6;
+    }
+</style>
+{% endblock %}
